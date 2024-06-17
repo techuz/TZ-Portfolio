@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/styles/main.css">
+        <link rel="stylesheet" href="output.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="py-[1.563rem] flex flex-wrap items-center justify-between ">
+                    <div class="left">
+                        <a href="javascript:void(0)" class="text-[1.875rem] text-[--primary] font-semibold text">Logo</a>
+                    </div>
+                    <div class="right relative">
+                        <span class="mobile-menu w-10 absolute right-0 top-[-16px] md:hidden z-[99999] flex flex-wrap h-10">
+                            <span class="inline-block w-10 h-[4px] bg-black"></span>
+                            <span class="inline-block w-10 h-[4px] bg-black"></span>
+                            <span class="inline-block w-10 h-[4px] bg-black"></span>
+                        </span>
+                        <ul class="menu-list flex flex-wrap items-center gap-[3.125rem] max-sm:fixed max-sm:left-0 max-sm:top-0 max-sm:z-[9] max-sm:flex-col max-sm:items-start max-sm:justify-start max-sm:px-[3.75rem] max-sm:py-[10rem] max-sm:bg-[#fdf2e0] max-sm:w-full max-sm:h-full max-sm:gap-5 max-sm:translate-x-[100%] transition-all transition-timing-funciton: cubic-bezier(0.7, 0, 0.3, 1) duration-[0.5s]">
+                            <li><a href="#about" class="relative before:content-[''] before:w-full before:h-[1px] before:bg-[--primary] before:absolute before:left-0 before:bottom-[-2px] before:scale-x-0 before:transition-transform before:cubic-bezier(0.4, 0, 0.2, 1) before:hover:scale-x-100 text-xl leading-[1.647] text-[--primary] max-sm:text-[2rem]">About</a></li>
+                            <li><a href="#work" class="relative before:content-[''] before:w-full before:h-[1px] before:bg-[--primary] before:absolute before:left-0 before:bottom-[-2px] before:scale-x-0 before:transition-transform before:cubic-bezier(0.4, 0, 0.2, 1) before:hover:scale-x-100 text-xl leading-[1.647] text-[--primary] max-sm:text-[2rem]">Work</a></li>
+                            <li><a href="#contact" class="relative before:content-[''] before:w-full before:h-[1px] before:bg-[--primary] before:absolute before:left-0 before:bottom-[-2px] before:scale-x-0 before:transition-transform before:cubic-bezier(0.4, 0, 0.2, 1) before:hover:scale-x-100 text-xl leading-[1.647] text-[--primary] max-sm:text-[2rem]">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <!-- Banner section -->
+
+            <section class="banner">
+                <div class="small-container">
+                    <div class="banner-grid grid grid-cols-2 items-center justify-between py-[6.25rem] gap-[28px] max-xl:py-[3.125rem] max-sm:grid-cols-1">
+                        <div class="left">
+                            <span class="text-lg text-[--primary] leading-[1.33rem] font-semibold inline-block mb-10 max-[991px]:mb-5">Branding | Image making </span>
+                            <h1 class="text-6xl font-semibold leading-[1.2]  text-[--primary] max-w-[31.25rem] mb-10 max-[991px]:text-[2.625rem] max-[991px]:mb-5">
+                                My awesome portfolio
+                            </h1>
+                            <p class="text-[--primary] opacity-[0.8]">And I made it myself! Yes. In Figma with Anima</p>
+                        </div>
+                        <div class="right">
+                            <img src="../assets/images/banner-img.jpg" alt="" class="block my-0 mx-auto max-sm:w-[300px]">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brands logo -->
+
+            <section class="client-logos mb-[3.125rem] max-[991px]:mb-5">
+                <div class="small-container">
+                    <ul class="grid grid-cols-5 gap-6 items-center justify-between py-[4.125rem] border-t-[2px] border-b-[2px] border-t-[rgba(0,0,0,0.2)] border-b-[rgba(0,0,0,0.2)] max-[991px]:py-[2.5rem]">
+                        <li><img src="../assets/images/Behance.png" alt=""></li>
+                        <li><img src="../assets/images/Google.png" alt=""></li>
+                        <li><img src="../assets/images/Apple.png" alt=""></li>
+                        <li><img src="../assets/images/Dribbble.png" alt=""></li>
+                        <li><img src="../assets/images/Awwwards.png" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- About -->
+
+            <section class="about py-[6.25rem] max-xl:py-[3.125rem] max-sm:py-[1.875rem]" id="about">
+                <div class="small-container">
+                    <p class="text-[2.5rem] text-center text-[--primary] max-[1199px]:text-[1.875rem] max-[1199px]:max-w-[43.75rem] max-[1199px]:mx-auto max-[1199px]:my-0">
+                        Hi, I’m ChatGPT, I work as an AI  web designer specialized in the conception of custom and unique website. I love  designing interfaces with a beautiful and  strong user experience. Very, very often I work with my comrade  of the web, Adrien , a very cool  web developer.
+                    </p>
+                </div>
+            </section>
+
+            <!-- latest-works  -->
+
+            <section id="work" class="latest-work py-[3.125rem] max-[1199px]:py-[1.875rem] relative before:content-[''] before:w-[37.5rem] before:h-[37.5rem] before:bg-[#ffc7c2] before:absolute before:filter before:blur-[6.25rem] before:rounded-full before:left-[-110px] before:top-[-90px] before:-z-[1] before:opacity-[0.6]">
+                <div class="small-container">
+                    <h2 class="text-center text-[2.625rem] text-[--primary] leading-[1.3125] font-semibold mb-[3.75rem] max-[1199px]:text-[2.25rem] max-[1199px]:mb-10">My latest work</h2>
+                    <div class="card-grid grid grid-cols-3 gap-[3.75rem] max-xl:gap-5 max-[991px]:grid-cols-2 max-sm:grid-cols-1">
+                        <div class="card-item">
+                            <div class="img-container h-[19.688rem] w-[19.688rem] max-[991px]:w-full max-[991px]:h-[380px]">
+                                <img src="../assets/images/Image.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="card-content mt-[1.563rem]">
+                                <h3 class="mb-[5px] text-xl leading-[1.5] text-[--primary] font-semibold">Free Bird</h3>
+                                <p class="text-[--primary] text-[1.063rem] leading-[1.588]">Lynyrd Skynyrd</p>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="img-container h-[19.688rem] w-[19.688rem] max-[991px]:w-full max-[991px]:h-[380px]">
+                                <img src="../assets/images/Image-1.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="card-content mt-[1.563rem]">
+                                <h3 class="mb-[5px] text-xl leading-[1.5] text-[--primary] font-semibold">Purple Haze</h3>
+                                <p class="text-[--primary] text-[1.063rem] leading-[1.588]">Jimi Hendrix</p>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="img-container h-[19.688rem] w-[19.688rem] max-[991px]:w-full max-[991px]:h-[380px]">
+                                <img src="../assets/images/Image-2.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="card-content mt-[1.563rem]">
+                                <h3 class="mb-[5px] text-xl leading-[1.5] text-[--primary] font-semibold">You Really Got Me</h3>
+                                <p class="text-[--primary] text-[1.063rem] leading-[1.588]">The Kinks</p>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="img-container h-[19.688rem] w-[19.688rem] max-[991px]:w-full max-[991px]:h-[380px]">
+                                <img src="../assets/images/Image-3.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="card-content mt-[1.563rem]">
+                                <h3 class="mb-[5px] text-xl leading-[1.5] text-[--primary] font-semibold">American Girl</h3>
+                                <p class="text-[--primary] text-[1.063rem] leading-[1.588]">Tom Petty</p>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="img-container h-[19.688rem] w-[19.688rem] max-[991px]:w-full max-[991px]:h-[380px]">
+                                <img src="../assets/images/Image-4.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="card-content mt-[1.563rem]">
+                                <h3 class="mb-[5px] text-xl leading-[1.5] text-[--primary] font-semibold">Whole Lotta Love</h3>
+                                <p class="text-[--primary] text-[1.063rem] leading-[1.588]">Led Zeppelin</p>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="img-container h-[19.688rem] w-[19.688rem] max-[991px]:w-full max-[991px]:h-[380px]">
+                                <img src="../assets/images/Image-5.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="card-content mt-[1.563rem]">
+                                <h3 class="mb-[5px] text-xl leading-[1.5] text-[--primary] font-semibold">Under Pressure </h3>
+                                <p class="text-[--primary] text-[1.063rem] leading-[1.588]">Queen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonial Section -->
+
+            <section class="testimonial py-[3.125rem] max-[1199px]:py-[1.875rem] relative before:content-[''] before:w-[37.5rem] before:h-[37.5rem] before:bg-[#ffe7c2] before:absolute before:filter before:blur-[6.25rem] before:rounded-full before:right-[-110px] before:top-[-90px] before:-z-[1] before:opacity-[0.6]">
+                <div class="small-container">
+                    <h2 class="text-center text-[2.625rem] text-[--primary] leading-[1.3125] font-semibold mb-[3.438rem] max-[1199px]:text-[2.25rem] max-[1199px]:mb-10">Clients</h2>
+                    <div class="grid grid-cols-3 gap-[3.75rem] max-[1199px]:gap-[1.875rem] max-[767px]:grid-cols-1">
+                        <div class="border-[1.5px] border-[#FFD285] bg-[#FFFCF5] py-[1.875rem] pl-[1.875rem] pr-[1.375rem] flex flex-wrap items-start">
+                            <p class="text-xl leading-[1.611] font-semibold mb-20 text-[--primary] max-[991px]:text-lg max-sm:mb-10">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                            <div class="client-detail self-end">
+                                <div class="img-container w-[50px] h-[50px] inline-block">
+                                    <img src="../assets/images/author-1.png" alt="">
+                                </div>
+                                <p class="inline-block align-top pl-5">
+                                    <img src="../assets/images/rate-stars.png" alt="" class="mb-[0.625rem]">
+                                    <span class="inline-block text-[17px] leading-[1.588] text-[--primary]">
+                                        Gemma Nolen, 
+                                        <span class="block">Google</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-[1.5px] border-[#FFD285] bg-[#FFFCF5] py-[1.875rem] pl-[1.875rem] pr-[1.375rem]">
+                            <p class="text-xl leading-[1.611] font-semibold mb-20 text-[--primary] max-[991px]:text-lg max-sm:mb-10">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                            <div class="client-detail self-end">
+                                <div class="img-container w-[50px] h-[50px] inline-block">
+                                    <img src="../assets/images/author-2.png" alt="">
+                                </div>
+                                <p class="inline-block align-top pl-5">
+                                    <img src="../assets/images/rate-stars.png" alt="" class="mb-[0.625rem]">
+                                    <span class="inline-block text-[17px] leading-[1.588] text-[--primary]">
+                                        Gemma Nolen, 
+                                        <span class="block">Google</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-[1.5px] border-[#FFD285] bg-[#FFFCF5] py-[1.875rem] pl-[1.875rem] pr-[1.375rem]">
+                            <p class="text-xl leading-[1.611] font-semibold mb-20 text-[--primary] max-[991px]:text-lg max-sm:mb-10">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                            <div class="client-detail self-end">
+                                <div class="img-container w-[50px] h-[50px] inline-block">
+                                    <img src="../assets/images/author-3.png" alt="">
+                                </div>
+                                <p class="inline-block align-top pl-5">
+                                    <img src="../assets/images/rate-stars.png" alt="" class="mb-[0.625rem]">
+                                    <span class="inline-block text-[17px] leading-[1.588] text-[--primary]">
+                                        Gemma Nolen, 
+                                        <span class="block">Google</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section  -->
+
+            <section id="contact" class="contact-us mt-[6.25rem] max-[1199px]:mt-[4.375rem] max-sm:mt-[1.875rem]">
+                <div class="small-container">
+                    <div class="contact-grid border-t-[2px] border-t-[rgba(0,0,0,0.2)] py-[4.375rem] grid grid-cols-[360px_530px] justify-between max-[991px]:grid-cols-2 max-[991px]:gap-10 max-sm:py-[3.125rem] max-sm:grid-cols-1">
+                        <div class="left">
+                            <h2 class="text-[2.625rem] text-[--primary] leading-[1.3125] font-semibold mb-[1.875rem] max-[1199px]:text-[2.25rem] max-[1199px]:mb-5 max-[1199px]:max-w-[210px]">Let’s work together</h2>
+                            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                            <ul class="mt-[3.75rem] max-sm:mt-5">
+                                <li class="inline-block align-middle mr-[17px]">
+                                    <a href="javascript:void(0)" class="hover:opacity-[0.5] transition-all ease-in-out">
+                                        <img src="../assets/images/discord.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="inline-block align-middle mr-[17px]">
+                                    <a href="javascript:void(0)" class="hover:opacity-[0.5] transition-all ease-in-out">
+                                        <img src="../assets/images/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="inline-block align-middle mr-[17px]">
+                                    <a href="javascript:void(0)" class="hover:opacity-[0.5] transition-all ease-in-out">
+                                        <img src="../assets/images/dribble.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="inline-block align-middle mr-[17px]">
+                                    <a href="javascript:void(0)" class="hover:opacity-[0.5] transition-all ease-in-out">
+                                        <img src="../assets/images/instagram.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="inline-block align-middle">
+                                    <a href="javascript:void(0)" class="hover:opacity-[0.5] transition-all ease-in-out">
+                                        <img src="../assets/images/behance.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="form grid grid-cols-1 gap-5">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="nameInput" placeholder="Name" class="bg-[#F3F3F3] px-[1.875rem] pt-[0.938rem] pb-[0.75rem] text-[1.063rem] text-[--primary] placeholder:text-[--primary] w-full">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="emailInput" placeholder="Email" class="bg-[#F3F3F3] px-[1.875rem] pt-[0.938rem] pb-[0.75rem] text-[1.063rem] text-[--primary] placeholder:text-[--primary] w-full">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" id="messageInput" placeholder="Type your message here" class="bg-[#F3F3F3] px-[1.875rem] pt-[0.938rem] pb-5 text-[1.063rem] text-[--primary] placeholder:text-[--primary] w-full resize-none h-[230px]"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="bg-[--primary] pt-[25px] py-[22px] px-[82px] inline-flex items-center relative overflow-hidden group max-sm:pt-5 max-sm:pb-[17px] max-sm:px-[3.25rem]">
+                                        <span class="w-[6.25rem] h-[6.25rem] absolute flex flex-wrap items-center justify-center bg-[--grey] rounded-full top-[50%] left-[-30px] transform translate-y-[-50%] translate-x-[-100px] group-hover:translate-x-[-7px] group-hover:translate-y-[-47px] transition ease-in-out duration-[0.4s] max-sm:w-20 max-sm:h-20 max-sm:group-hover:translate-x-0 max-sm:group-hover:translate-y-[-40px]">
+                                            <img src="../assets/images/arrow-right.svg" alt="" class="w-10 translate-x-[17px] transition ease-in-out duration-[0.4s] max-sm:w-[35px]">
+                                        </span>
+                                        <span class="text-[#fff] text-base group-hover:translate-x-3 transition ease-in-out duration-[0.4s]">Submit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-[--primary] pt-[100px] pb-[1.875rem] max-[1199px]:pt-[3.75rem] max-sm:pt-10">
+            <div class="container">
+                <div class="logo text-center">
+                    <a href="javascript:void(0)" class="text-[1.875rem] text-[--grey] font-semibold text">Logo</a>
+                </div>
+                <ul class="mt-[1.875rem] text-center flex flex-wrap items-center justify-center gap-[3.75rem]">
+                    <li><a href="#about" class="text-[#fff] text-lg hover:opacity-[0.6] transition-all duration-[0.4s] ease-out">About</a></li>
+                    <li><a href="#work" class="text-[#fff] text-lg hover:opacity-[0.6] transition-all duration-[0.4s] ease-out">Work</a></li>
+                    <li><a href="#contact" class="text-[#fff] text-lg hover:opacity-[0.6] transition-all duration-[0.4s] ease-out">Contact</a></li>
+                </ul>
+                <ul class="flex flex-wrap items-center justify-center gap-10 mt-10">
+                    <li class="inline-block">
+                        <a href="javascript:void(0)" class="inline-block hover:opacity-[0.6] transition-all ease-in-out duration-[0.3s]"><img src="../assets/images/dribble-white.svg" alt="" class="w-[20px]"></a>
+                    </li> 
+                    <li class="inline-block">
+                       <a href="javascript:void(0)" class="inline-block hover:opacity-[0.6] transition-all ease-in-out duration-[0.3s]"><img src="../assets/images/instagram-white.svg" alt="" class="w-[20px]"></a>
+                    </li> 
+                    <li class="inline-block">
+                       <a href="javascript:void(0)" class="inline-block hover:opacity-[0.6] transition-all ease-in-out duration-[0.3s]"><img src="../assets/images/facebook-white.svg" alt="" class="w-5"></a>
+                    </li> 
+                </ul>
+                <div class="footer-socket pt-[3.125rem] text-center">
+                    <p class="text-center text-[#888] text-sm block mb-4">© All rights reserved</p>
+                    <p class="text-center text-[#888] text-sm inline-block relative pr-[0.875rem] mr-[0.625rem] before:content-[''] before:w-[1px] before:h-[15px] before:bg-[#888] before:absolute before:right-0 before:t-[3px] hover:text-[#fff] hover:transition-all hover:ease-in-out hover:duration-[0.3s]"><a href="javascript:void(0)">Terms and Conditions</a></p>
+                    <p class="text-center text-[#888] text-sm inline-block hover:text-[#fff] hover:transition-all hover:ease-in-out hover:duration-[0.3s]"><a href="javascript:void(0)">Privacy Policy</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="../assets/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.mobile-menu').click(function() {
+                    $(this).toggleClass('close-menu');
+                    $('.menu-list').toggleClass('max-sm:translate-x-[100%]');
+                })
+            })
+        </script>
+    </body>
+</html>
