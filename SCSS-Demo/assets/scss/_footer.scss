@@ -1,0 +1,96 @@
+.footer{
+    margin-top: auto;
+    padding: 84px 0 0;
+    background-color: $blue2;
+    color: $white;
+    &-inner{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 70px;
+        @media(max-width: $small){
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+    &-col{
+        max-width: 400px;
+    }
+    &-logo{
+        display: inline-block;
+        width: 115px;
+        height: 44px;
+        margin: 0 0 20px;
+        img{
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    p{
+        font-size: 16px;
+        opacity: 0.8;
+    }
+    &-menu{
+        li{
+            margin: 0 0 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    a{
+        color: $white;
+        opacity: 0.8;
+        &:hover{
+            color: $yellow;
+            opacity: 1;
+        }
+    }
+    .phone{
+        margin-top: 20px;
+       h4{
+            font-size: 15px;
+            font-weight: normal;
+            margin: 0 0 5px;
+       }
+       a{
+        font-size: 19px;
+        font-weight: 700;
+        opacity: 1;
+       }
+    }
+    &-bottom{
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .copyright-cont{
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .social-menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            li{
+                a{
+                    @include d_flexMiddle;
+                    height: 30px;
+                    width: 30px;
+                    border: 1px solid $white;
+                    font-size: 14px;
+                    border-radius: 50%;
+                    &:hover{
+                        border-color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}
