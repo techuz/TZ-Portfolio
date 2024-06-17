@@ -20,6 +20,10 @@ header{
                 width: 127px;
                 height: 48px;
             }
+            @media(max-width: $x-small){
+                width: 100px;
+                height: 38px;
+            }
         }
     }
 
@@ -35,6 +39,10 @@ header{
         @media(max-width: $medium){
             width: 127px;
             height: 48px;
+        }
+        @media(max-width: $x-small){
+            width: 100px;
+            height: 38px;
         }
         a, img{
             display: block;
@@ -62,7 +70,7 @@ header{
             overflow: auto;
             width: 300px;
             background-color: $white;
-            padding: 100px 20px 30px;
+            padding: 100px 0 30px;
             right: 0;
             top: 0;
             bottom: 0;
@@ -77,6 +85,11 @@ header{
                 z-index: 999;
             }
         }
+        .header-btn{
+            @media(max-width: $medium){
+                padding: 0 30px;
+            }
+        }
     }
 
     .hamburger-menu{
@@ -85,11 +98,29 @@ header{
         height: 30px;
         width: 30px;
         cursor: pointer;
+        position: relative;
+        z-index: 9999;
         em{
             height: 2px;
             display: block;
             width: 100%;
             background-color: $white;
+        }
+        &.clicked{
+            em{
+                background-color: $black;
+                transition: all 0.3s ease-in-out;
+                &:nth-child(2){
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(8px, 8px);
+                }
+                &:nth-child(3){
+                    transform: rotate(-45deg) translate(6px, -7px);
+                }
+            }
         }
     }
 }
@@ -129,7 +160,7 @@ header{
                 @media(max-width: $medium){
                     color: $black;
                     display: block;
-                    padding-inline: 30px;
+                    padding: 5px 30px;
                 }
                 &:hover{
                     color: $yellow;

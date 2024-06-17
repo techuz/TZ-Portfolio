@@ -10,13 +10,50 @@ body{
     font-size: 18px;
     line-height: 1.5;
     overflow-x: hidden;
+    position: relative;
+    &::before{
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    @media(max-width: $large){
+        font-size: 17px;
+    }
+    @media(max-width: $medium){
+        font-size: 16px;
+    }
+    @media(max-width: $small){
+        font-size: 15px;
+    }
     &.over-hidden{
-        // overflow: hidden;
+        overflow: hidden;
+        &::before{
+            opacity: 1;
+            visibility: visible;
+            z-index: 999;
+        }
     }
 }
 p{
     margin: 0 0 24px;
-    &:last-child{
+    @media(max-width: $large){
+        margin: 0 0 20px;
+    }
+    @media(max-width: $medium){
+        margin: 0 0 15px;
+    }
+    @media(max-width: $small){
+        margin: 0 0 10px;
+    }
+    &:last-child{ 
         margin: 0;
     }
 }
@@ -45,6 +82,12 @@ ul, ol{
     justify-content: start;
     flex-wrap: wrap;
     gap: 24px;
+    @media(max-width: $large){
+        gap: 20px;
+    }
+    @media(max-width: $medium){
+        gap: 16px;
+    }
 }
 .btn{
     display: inline-block;
@@ -52,13 +95,21 @@ ul, ol{
     border-radius: 36px;
     font-size: 16px;
     line-height: 1.18;
-    line-height: 18px;
     text-align: center;
     border: 2px solid $white;
     background-color: $white;
     font-weight: 600;
     color: $black;
     transition: all 0.5s ease-in-out;
+    @media(max-width: $medium){
+        padding: 12px 20px;
+        font-size: 15px;
+        line-height: 1.18;
+    }
+    @media(max-width: $small){
+        padding: 10px 20px;
+        font-size: 14px;
+    }
     &:hover{
         background-color: $black;
         border-color: $black;
@@ -88,6 +139,10 @@ ul, ol{
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
+    @media(max-width: $medium){
+        height: 40px;
+        width: 40px;
+    }
     &:after{
         content: "";
         height: 12px;
@@ -99,6 +154,10 @@ ul, ol{
         margin-top: 5px;
         border-radius: 2px;
         transition: all 0.5s ease-in-out;
+        @media(max-width: $medium){
+            height: 10px;
+            width: 10px;
+        }
     }
     &:hover{
         background-color: $yellow;
@@ -113,6 +172,9 @@ ul, ol{
     bottom: 30px;
     opacity: 1;
     visibility: visible;
+    @media(max-width: $medium){
+        bottom: 40px;
+    }
 }
 
 .wrapper{
@@ -132,4 +194,76 @@ h3{
 }
 h4{
     @include h4;
+}
+
+// cardEffect animation
+@keyframes cardEffect {
+    0%{
+        top: -15px;
+        left: 15px;
+    }
+    25%{
+        left: 15px;
+        top: 15px;
+    }
+    50%{
+        top: 15px;
+        left: -15px;
+    }
+    75%{
+        top: -15px;
+        left: -15px;
+    }
+    100%{
+        top: -15px;
+        left: 15px;
+    }
+}
+@media(max-width: $small){
+    @keyframes cardEffect {
+        0%{
+            top: -10px;
+            left: 10px;
+        }
+        25%{
+            left: 10px;
+            top: 10px;
+        }
+        50%{
+            top: 10px;
+            left: -10px;
+        }
+        75%{
+            top: -10px;
+            left: -10px;
+        }
+        100%{
+            top: -10px;
+            left: 10px;
+        }
+    }
+}
+@media(max-width: $x-small){
+    @keyframes cardEffect {
+        0%{
+            top: -5px;
+            left: 5px;
+        }
+        25%{
+            left: 5px;
+            top: 5px;
+        }
+        50%{
+            top: 5px;
+            left: -5px;
+        }
+        75%{
+            top: -5px;
+            left: -5px;
+        }
+        100%{
+            top: -5px;
+            left: 5px;
+        }
+    }
 }
